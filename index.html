@@ -1,67 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Business</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-    }
-    .product {
-      background: white;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 10px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px;
-      background: green;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&A Treasures | Aesthetic Collection</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fdf6f0; color: #444; margin: 0; padding: 0; }
+        header { padding: 60px 20px; background: #fff; text-align: center; border-bottom: 1px solid #eee; }
+        h1 { color: #d4a373; margin: 0; font-size: 2.5em; letter-spacing: 2px; text-transform: uppercase; }
+        .tagline { color: #888; font-style: italic; margin-top: 10px; font-size: 1.1em; }
+        
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; padding: 50px 20px; }
+        
+        .card { background: #fff; border-radius: 25px; box-shadow: 0 15px 30px rgba(0,0,0,0.05); width: 320px; padding: 20px; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        
+        /* ইমেজ গ্যালারি স্টাইল */
+        .main-img { width: 100%; height: 280px; object-fit: cover; border-radius: 15px; margin-bottom: 10px; }
+        .sub-img-row { display: flex; gap: 10px; justify-content: space-between; }
+        .sub-img { width: 48%; height: 100px; object-fit: cover; border-radius: 10px; border: 1px solid #eee; }
+        
+        h3 { color: #333; margin: 20px 0 5px; font-size: 1.4em; }
+        .price { color: #d4a373; font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
+        
+        .order-btn { display: block; background-color: #d4a373; color: white; padding: 15px; text-decoration: none; border-radius: 10px; font-weight: bold; text-align: center; transition: 0.3s; }
+        .order-btn:hover { background-color: #bc8a5f; }
+        
+        footer { text-align: center; padding: 40px; color: #aaa; font-size: 0.9em; }
+    </style>
 </head>
-
 <body>
 
-<header>
-  <h1>My Business</h1>
-  <p>Best Quality Products</p>
-</header>
+    <header>
+        <h1>S&A Treasures</h1>
+        <p class="tagline">Finding beauty in little things ✨</p>
+    </header>
 
-<div class="container">
+    <div class="container">
+        
+        <!-- প্রোডাক্ট ১: বিডেড ওয়াচ -->
+        <div class="card">
+            <div class="gallery">
+                <img src="https://postimg.cc/PLLQ9b3D" class="main-img" alt="Watch Main">
+                <div class="sub-img-row">
+                    <img src="https://postimg.cc/Hj1F0jnF" class="sub-img" alt="Watch Side">
+                    <img src="https://postimg.cc/BLTY7cb8" class="sub-img" alt="Watch Detail">
+                </div>
+            </div>
+            <h3>Aesthetic Beaded Watch</h3>
+            <p class="price">525 BDT</p>
+            <a href="https://forms.gle/6vYYWzMcDMzZBpdL6" class="order-btn">অর্ডার করতে ক্লিক করুন</a>
+        </div>
 
-  <div class="product">
-    <h2>Product 1</h2>
-    <p>Product description here</p>
-    <a class="btn" href="#">Buy Now</a>
-  </div>
+        <!-- প্রোডাক্ট ২: অ্যাস্ট্রোনট ল্যাম্প -->
+        <div class="card">
+            <div class="gallery">
+                <img src="https://postimg.cc/hztsMWFd" class="main-img" alt="Lamp Main">
+                <div class="sub-img-row">
+                    <img src="https://postimg.cc/7CxnY8Z5" class="sub-img" alt="Lamp Glow">
+                    <img src="https://postimg.cc/CdZHK4wy" class="sub-img" alt="Lamp Box">
+                </div>
+            </div>
+            <h3>Astronaut Sunset Lamp</h3>
+            <p class="price">750 BDT</p>
+            <a href="https://forms.gle/6vYYWzMcDMzZBpdL6" class="order-btn">অর্ডার করতে ক্লিক করুন</a>
+        </div>
 
-  <div class="product">
-    <h2>Product 2</h2>
-    <p>Product description here</p>
-    <a class="btn" href="#">Buy Now</a>
-  </div>
+        <!-- প্রোডাক্ট ৩: বাটারফ্লাই কিচেন -->
+        <div class="card">
+            <div class="gallery">
+                <img src="https://postimg.cc/D4SGJxqL" class="main-img" alt="Keychain Main">
+                <div class="sub-img-row">
+                    <img src="https://postimg.cc/RJJ3VNBM" class="sub-img" alt="Keychain Close">
+                    <img src="https://postimg.cc/r0KsQKzC" class="sub-img" alt="Keychain Colors">
+                </div>
+            </div>
+            <h3>Butterfly Aesthetic Keychain</h3>
+            <p class="price">200 BDT</p>
+            <a href="https://forms.gle/6vYYWzMcDMzZBpdL6" class="order-btn">অর্ডার করতে ক্লিক করুন</a>
+        </div>
 
-  <div class="product">
-    <h2>Product 3</h2>
-    <p>Product description here</p>
-    <a class="btn" href="#">Buy Now</a>
-  </div>
+    </div>
 
-</div>
+    <footer>
+        &copy; 2026 S&A Treasures Bangladesh. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
